@@ -371,7 +371,7 @@ function About() {
           >
             <div ref={imgRef} style={{ overflow: "hidden" }}>
               <img
-                src="/odei amoani stephen.jpeg"
+                src="/profile.jpeg"
                 alt="Odei Amoani Stephen — developer and designer"
                 style={{ width: "100%", height: 480, objectFit: "cover", display: "block" }}
               />

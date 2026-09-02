@@ -1,0 +1,10 @@
+{
+  "description": "Showcase your work with a modern portfolio website featuring animations, skills display, and integrated contact forms for seamless client communication.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

@@ -371,7 +371,7 @@ function About() {
           >
             <div ref={imgRef} style={{ overflow: "hidden" }}>
               <img
-                src="/profile.jpeg"
+                src={`${import.meta.env.BASE_URL}profile.jpeg`}
                 alt="Odei Amoani Stephen — developer and designer"
                 style={{ width: "100%", height: 480, objectFit: "cover", display: "block" }}
               />

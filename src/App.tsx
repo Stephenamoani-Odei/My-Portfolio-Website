@@ -3,7 +3,6 @@ import AOS from "aos";
 import { gsap } from "gsap";
 import emailjs from "@emailjs/browser";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import profileImage from "./img/odei amoani stephen.jpeg";
 import { sendEmail } from "./config/emailjs";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -372,7 +371,7 @@ function About() {
           >
             <div ref={imgRef} style={{ overflow: "hidden" }}>
               <img
-                src={profileImage}
+                src="/odei amoani stephen.jpeg"
                 alt="Odei Amoani Stephen — developer and designer"
                 style={{ width: "100%", height: 480, objectFit: "cover", display: "block" }}
               />

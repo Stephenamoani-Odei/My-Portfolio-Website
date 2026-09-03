@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 import emailjs from "@emailjs/browser";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { sendEmail } from "./config/emailjs";
-import profileImage from "./img/odei amoani stephen.jpeg";
+import profileImage from "./img/odei-amoani-stephen.jpeg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -301,7 +301,7 @@ function Hero() {
           </a>
 
           {/* Social links */}
-          <div className="flex gap-4 ml-2">
+          <div className="flex w-full justify-center gap-4 mt-2 md:w-auto md:justify-start md:mt-0 md:ml-2">
             {[
               { label: "GitHub", url: "https://github.com/Stephenamoani-Odei" },
               { label: "LinkedIn", url: "https://www.linkedin.com/in/stephen-odei-amoani-42a99b343/" },
@@ -756,7 +756,7 @@ function Contact() {
               ))}
             </div>
 
-            <div className="flex gap-4 mt-10">
+            <div className="flex justify-center md:justify-start gap-4 mt-10">
               {["GitHub", "LinkedIn", "X"].map((s) => (
                 <a
                   key={s}

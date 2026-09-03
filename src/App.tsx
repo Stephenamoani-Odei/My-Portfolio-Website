@@ -4,7 +4,6 @@ import { gsap } from "gsap";
 import emailjs from "@emailjs/browser";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { sendEmail } from "./config/emailjs";
-import profileImage from "./img/odei-amoani-stephen.jpeg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -130,7 +129,7 @@ function Navbar({ active }: { active: string }) {
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden flex flex-col gap-1.5 p-2 mr-2"
+          className="md:hidden flex flex-col gap-1.5 p-2"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
@@ -301,7 +300,7 @@ function Hero() {
           </a>
 
           {/* Social links */}
-          <div className="flex w-full justify-center gap-4 mt-2 md:w-auto md:justify-start md:mt-0 md:ml-2">
+          <div className="flex gap-4 ml-2">
             {[
               { label: "GitHub", url: "https://github.com/Stephenamoani-Odei" },
               { label: "LinkedIn", url: "https://www.linkedin.com/in/stephen-odei-amoani-42a99b343/" },
@@ -372,7 +371,7 @@ function About() {
           >
             <div ref={imgRef} style={{ overflow: "hidden" }}>
               <img
-                src={profileImage}
+                src={`${import.meta.env.BASE_URL}profile.jpeg`}
                 alt="Odei Amoani Stephen — developer and designer"
                 style={{ width: "100%", height: 480, objectFit: "cover", display: "block" }}
               />
@@ -756,7 +755,7 @@ function Contact() {
               ))}
             </div>
 
-            <div className="flex justify-center md:justify-start gap-4 mt-10">
+            <div className="flex gap-4 mt-10">
               {["GitHub", "LinkedIn", "X"].map((s) => (
                 <a
                   key={s}

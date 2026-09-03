@@ -1,9 +1,15 @@
 import emailjs from "@emailjs/browser";
 
-// Initialize EmailJS with your public key
+type ContactForm = {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+};
+
 emailjs.init("sGt2uPNIC_TauYCLL");
 
-export const sendEmail = async (formData) => {
+export const sendEmail = async (formData: ContactForm) => {
   try {
     const response = await emailjs.send(
       "service_0llcxuo",

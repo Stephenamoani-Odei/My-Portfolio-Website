@@ -95,7 +95,8 @@ html { scroll-behavior: smooth; }
 
 /* Floating dot bg */
 .dot-grid {
-  background-image: radial-gradient(circle, #2a2a2a 1px, transparent 1px);
+  background-color: #0c0c0c;
+  background-image: radial-gradient(circle, #3a3a3a 1px, transparent 1.25px);
   background-size: 32px 32px;
 }
 
@@ -134,4 +135,142 @@ html { scroll-behavior: smooth; }
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #e8a838;
+}
+
+/* Small-screen layout */
+@media (max-width: 767px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  #hero {
+    min-height: 100svh;
+    padding-top: 4rem;
+  }
+
+  #hero > .max-w-6xl {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  #hero h1 {
+    font-size: clamp(2.7rem, 14vw, 4.5rem) !important;
+    line-height: 0.98 !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  #hero h1 + p {
+    font-size: 1rem !important;
+    margin-bottom: 2rem !important;
+  }
+
+  #hero .flex.flex-wrap.gap-4.items-center {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  #hero .flex.flex-wrap.gap-4.items-center > a,
+  #hero .flex.flex-wrap.gap-4.items-center > div {
+    width: 100%;
+  }
+
+  #hero .flex.flex-wrap.gap-4.items-center > a {
+    text-align: center;
+  }
+
+  #hero .flex.flex-wrap.gap-4.items-center > div {
+    justify-content: space-between;
+    margin-left: 0;
+  }
+
+  #hero .absolute {
+    max-width: 100vw;
+  }
+
+  #about,
+  #skills,
+  #work,
+  #contact {
+    padding-top: 5.5rem !important;
+    padding-bottom: 5.5rem !important;
+  }
+
+  #about .grid,
+  #skills .grid,
+  #work .grid,
+  #contact .grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #about img {
+    height: min(480px, 115vw) !important;
+  }
+
+  #about .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+
+  #about .grid-cols-3 p:first-child {
+    font-size: 1.8rem !important;
+  }
+
+  #skills .flex.flex-col.md\:flex-row {
+    align-items: flex-start;
+  }
+
+  #skills button {
+    min-height: 2.25rem;
+    padding-left: 0.7rem !important;
+    padding-right: 0.7rem !important;
+  }
+
+  #work .project-card > div:last-child {
+    padding: 1.25rem !important;
+  }
+
+  #contact input,
+  #contact select,
+  #contact textarea {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  #contact button {
+    width: 100%;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+
+@media (max-width: 420px) {
+  #hero > .max-w-6xl,
+  #about > .max-w-6xl,
+  #skills > .max-w-6xl,
+  #work > .max-w-6xl,
+  #contact > .max-w-6xl,
+  footer > .max-w-6xl {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #hero p {
+    letter-spacing: 0.12em !important;
+  }
+
+  #about .grid-cols-3 {
+    gap: 0.5rem;
+  }
+
+  #about .grid-cols-3 p:last-child {
+    font-size: 0.55rem !important;
+    letter-spacing: 0.08em !important;
+  }
+
+  #work img {
+    height: 11rem !important;
+  }
 }

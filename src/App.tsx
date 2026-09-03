@@ -22,40 +22,40 @@ const skills = [
 
 const projects = [
   {
-    title: "Sales Analytics Dashboard",
-    desc: "An interactive data dashboard built to visualize key business metrics — revenue trends, customer acquisition, product performance, and regional breakdowns. Features filterable charts, KPI cards, and exportable reports designed for decision-makers.",
+    title: "Billboard Analytics Dashboard",
+    desc: "An interactive data dashboard built to visualize key Hot 100 songs in the past 63 years metrics — weekly charts, unique chart, unique insights, overnight sensations & slow nurners. Features filterable charts, KPI cards, and exportable reports designed for decision-makers.",
     tags: ["React", "Recharts", "JavaScript", "CSS Grid"],
-    year: "2024",
+    year: "2026",
     category: "Data",
     img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop&auto=format",
-    link: "#",
+    link: "https://data-analysis-eight-blush.vercel.app/",
   },
   {
-    title: "ShopEase — E-Commerce Platform",
+    title: "ShapeWear — E-Commerce Platform",
     desc: "A fully functional e-commerce storefront with product listings, cart management, user authentication, and checkout flow. Built with a focus on speed, mobile responsiveness, and a clean shopping experience.",
     tags: ["React", "JavaScript", "LocalStorage", "CSS"],
-    year: "2024",
+    year: "2026",
     category: "Web App",
     img: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop&auto=format",
-    link: "#",
+    link: "https://github.com/Stephenamoani-Odei/ShapeWear.git",
   },
   {
-    title: "TaskFlow — Project Manager",
-    desc: "A Kanban-style task management web app for teams and freelancers. Drag-and-drop boards, deadline tracking, priority tags, and a clean dashboard overview — all running in the browser with no backend required.",
-    tags: ["React", "JavaScript", "Drag & Drop", "LocalStorage"],
-    year: "2024",
+    title: "Registration and payment systems",
+    desc: "EdenPlus Education Consult is a Ghana-based platform providing Cambridge Curriculum workshops and professional development for educators, built using React, Tailwind CSS, Supabase, and hosted on Vercel. The platform allows users to register for workshops, make payments, and receive confirmation emails. It also includes an admin dashboard for managing registrations and payments.",
+    tags: ["React", "TypeScript", "Supabase", "Form Validation"],
+    year: "2026",
     category: "Web App",
     img: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=500&fit=crop&auto=format",
-    link: "#",
+    link: "https://www.edenpluseducationconsult.com/",
   },
   {
-    title: "NetGuard — Security Audit Toolkit",
-    desc: "A conceptual cybersecurity project: a web-based toolkit designed to help small businesses run basic security self-audits. It walks users through common vulnerability categories — weak passwords, open ports, outdated software, phishing exposure — and generates a risk report with recommended mitigations. The goal is to make security awareness accessible to non-technical teams.",
-    tags: ["Cybersecurity", "React", "System Design", "Risk Analysis"],
-    year: "2025",
-    category: "Security",
+    title: " Pollution Incident Analysis (2021-2023)",
+   desc: "A comprehensive analysis of pollution incidents in Ghana over a three-year period, presented in a Google Sheets format. The dataset includes detailed records of various pollution events, their causes, and impacts, providing valuable insights for environmental research and policy-making.",
+    tags: ["Spreadsheet", "Incident Analysis"],
+    year: "2026",
+    category: "data",
     img: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=500&fit=crop&auto=format",
-    link: "#",
+    link: "https://docs.google.com/spreadsheets/d/13ZVVbINiHnRft59iUcOAqFqR07szcwrcRB3CmOf4v38/edit?usp=sharing",
   },
 ];
 
@@ -421,7 +421,7 @@ function About() {
             </div>
 
             <a
-              href="/resume.pdf"
+              href="public/Web_Developer_Resume.pdf"
               download
               style={{
                 display: "inline-flex",
@@ -549,7 +549,7 @@ function Skills() {
           className="mt-20 flex flex-wrap gap-3"
           style={{ borderTop: "1px solid #1c1c1c", paddingTop: 40 }}
         >
-          {["React.js", "JavaScript", "HTML/CSS", "Cybersecurity", "System Design", "Data Analytics", "Content Creation", "AI Tools", "Virtual Assistant", "Git", "Figma", "MS Office"].map((tech) => (
+          {["React.js", "JavaScript", "HTML/CSS/Tailwind", "Cybersecurity", "System Design", "Data Analytics", "Content Creation", "AI Tools", "Virtual Assistant", "Git", "GitHub", "MS Office Suite"].map((tech) => (
             <span key={tech} className="tag">{tech}</span>
           ))}
         </div>
@@ -744,7 +744,7 @@ function Contact() {
 
             <div className="flex flex-col gap-6">
               {[
-                { label: "EMAIL", value: "odeiamoanistephen@email.com" },
+                { label: "EMAIL", value: "odeiamoani98@email.com" },
                 { label: "LOCATION", value: "Ghana, West Africa — Remote OK" },
                 { label: "STATUS", value: "Available for hire" },
               ].map(({ label, value }) => (
@@ -756,10 +756,10 @@ function Contact() {
             </div>
 
             <div className="flex gap-4 mt-10">
-              {["GitHub", "LinkedIn", "Dribbble"].map((s) => (
+              {["GitHub", "LinkedIn", "X"].map((s) => (
                 <a
                   key={s}
-                  href="#"
+                  href="#hero"
                   style={{
                     fontFamily: "var(--font-mono)",
                     fontSize: "0.6rem",
@@ -800,7 +800,7 @@ function Contact() {
                   Message sent!
                 </p>
                 <p style={{ color: "#6b6560", fontSize: "0.875rem" }}>
-                  I"ll get back to you within 24 hours.
+                  I"ll get back to you shortly.
                 </p>
               </div>
             ) : (
@@ -914,7 +914,7 @@ function Footer() {
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
         <span style={{ fontFamily: "var(--font-display)", color: "#e8a838", fontSize: "1.1rem", fontWeight: 600 }}>OAS.</span>
         <p style={{ fontFamily: "var(--font-mono)", fontSize: "0.6rem", letterSpacing: "0.1em", color: "#2a2a2a" }}>
-          © {new Date().getFullYear()} ODEI AMOANI STEPHEN — CRAFTED WITH CARE
+          © {new Date().getFullYear()} ODEI AMOANI STEPHEN — All rights reserved.
         </p>
         <a
           href="#hero"

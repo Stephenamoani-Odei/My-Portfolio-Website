@@ -130,7 +130,7 @@ function Navbar({ active }: { active: string }) {
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden flex flex-col gap-1.5 p-2"
+          className="md:hidden flex flex-col gap-1.5 p-2 mr-2"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >

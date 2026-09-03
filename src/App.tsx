@@ -4,6 +4,7 @@ import { gsap } from "gsap";
 import emailjs from "@emailjs/browser";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { sendEmail } from "./config/emailjs";
+import profileImage from "./img/odei amoani stephen.jpeg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -371,7 +372,7 @@ function About() {
           >
             <div ref={imgRef} style={{ overflow: "hidden" }}>
               <img
-                src={`${import.meta.env.BASE_URL}profile.jpeg`}
+                src={profileImage}
                 alt="Odei Amoani Stephen — developer and designer"
                 style={{ width: "100%", height: 480, objectFit: "cover", display: "block" }}
               />
